@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #f5f5f5;
+    display: flex;  
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.title{
+    color: black;
+    font-weight: bold;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.nav{
+    margin-top: 100px;
+    margin-left: 418px;
+}
+
+.nav a{
+    padding: 15px;
+    color: grey;
+    font-family: sans-serif;
+}
+
+.nav .active{
+    color: black;
+}
+
+.login{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.login a{
+    padding: 15px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+.login .register{
+    background-color: #54bd95;
+    color: white;
+    border-radius: 15px;
+}
+
+.hero{
+    background-color: #f5f5f5;
+    padding: 200px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.text{
+    font-family: sans-serif;
+}
+
+.text h2{
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.secondary h2{
+    margin-top: -70px;
+    color: #4caf4f;
+}
+
+.subtitle{
+    color: gray;
+}
+
+.buton{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #4caf4f;
+    width: 100px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.images-main{
+    margin-left: 150px;
+}
+
+
+.clients{
+    text-align: center;
+    background-color: #ffff;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.c-title{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.c-title h2{
+    color: #525252;
+    font-size: 50px;
+}
+
+.c-title h3{
+    font-weight: 100;
+    color: gray;
+}
+
+.clients-logos{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.clients-logos img{
+    height: 70px;
+}
+
+
+.community{
+    margin-top: 200px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+.images-comunity{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.unlock{
+    padding: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.unlock img{
+    height: 600px;
+}
+
+.achievements{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+
+
+.counts{
+    margin-top: 50px;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 100px;
+}
+
+.text1{
+    margin-bottom: 90px;
+}
+
+.counts img{
+    margin-right: 15px;
+}
+
+.counts .primary{
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+}
+
+.counts .subtitle{
+    margin-top: -30px;
+    margin-left: 65px;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.calender{
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.calender img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 600px;
+}
+
+.calender .text{
+    margin-top: 100px;
+}
+
+.customer{
+    padding-top: 100px;
+    background-color: #f5f5f5;
+    margin-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.customer .img-tesla{
+    height: 600px;
+}
+
+.customer h3{
+    cursor: pointer;
+    color: #4caf4f;
+    font-size: 30px;
+}
+
+.customer h4{
+    color: gray;
+    font-size: 15px;
+}
+
+.customer h2{
+    color: #4caf4f;
+}
+
+.customer h3{
+    color: #4caf4f;
+    font-size: 15px;
+}
+
+.customer-logos{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.update{
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.butons-comunity{
+    position: absolute;
+    padding-left: 70px;
+}
+
+.butons-comunity div{
+    transition: 1.5s;
+    cursor: pointer;
+    margin-right: 140px;
+    margin-top: -170px;
+}
+
+.butons-comunity img:hover{
+    height: +205px;
+    transition: 1.5s;
+}
+
+.dot{
+    padding-top: 100px;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.dot h1{
+    font-size: 60px;
+}
+
+.dot button{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4caf4f;
+    border: 0;
+    padding: 20px 80px;
+    border-radius: 7px;
+}
+
+footer{
+    height: auto;
+    background-color: #263238;
+}
+
+footer .title{
+    color: white;
+}
+
+.main-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.copy{
+    margin-top: 100px;
+    font-family: sans-serif;
+    color: white;
+    padding-left: 200px;
+}
+
+.copy h4{
+    font-weight: 100;
+    margin-left: 100px;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 20px;
+}
+
+.redes i{
+    cursor: pointer;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #525252;
+}
+
+.links{
+    font-family: sans-serif;
+    color: white;
+    margin-top: 100px;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.links h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.links ul{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.links li{
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.email{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding-top: 100px;
+    margin-left: 150px;
+}
+
+
+.input{
+    cursor: pointer;
+    background-color: gray;
+    height: 40px;
+    padding-left: 10px;
+    width: 300px;
+    border-radius: 15px;
+    color: #a1a1a1;
+}
+
+.input i{
+    padding-left: 20px;
+}
+
+@media (max-width < 480px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
