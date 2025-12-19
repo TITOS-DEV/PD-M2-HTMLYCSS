@@ -1,13 +1,19 @@
+/*Seccion de estilos*/
+
+
+/*Cuerpo de la apgina*/
 body{
     margin: 0;
     padding: 0;
 }
 
+/*Cabezera de la pagina*/
 header{
     background-color: #f5f5f5;
     display: flex;  
 }
 
+/*Estilos para elemenots del header*/
 a{
     text-decoration: none;
     color: inherit;
@@ -50,11 +56,21 @@ a{
 }
 
 .login .register{
-    background-color: #54bd95;
+    background-color: #4caf4f;
     color: white;
     border-radius: 15px;
 }
 
+.login .register:hover{
+    background-color: #4caf4f;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px #9dcf9e;
+    transition: 0.5;
+}
+
+
+/*Hero de la pagina estilos y dimensiones*/
 .hero{
     background-color: #f5f5f5;
     padding: 200px;
@@ -94,16 +110,21 @@ a{
     border-radius: 7px;
 }
 
+.buton:hover{
+    box-shadow: 5px 5px 5px 5px #9dcf9e;
+    transition: 0.5;
+}
+
 .images-main{
     margin-left: 150px;
 }
 
-
+/*Estilos para la seccion de clientes*/
 .clients{
     text-align: center;
     background-color: #ffff;
     padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 200px;/*Esto lo pongo en varias secciones de la pagina para que alla un espacio entre el contenido y el cuerpo de la pagina*/
 }
 
 .c-title{
@@ -130,7 +151,7 @@ a{
     height: 70px;
 }
 
-
+/*Apartado de comunidad estilos y estrucutra implementacion de grid*/
 .community{
     margin-top: 200px;
     background-color: #ffffff;
@@ -149,13 +170,14 @@ a{
 .unlock{
     padding: 200px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);/*Implemento grid para desplazar elementos horizontalmente*/
 }
 
 .unlock img{
     height: 600px;
 }
 
+/*Se implementa estilos para la seccion se desplaza del body y se le asignan columnas*/
 .achievements{
     display: flex;
     justify-content: center;
@@ -194,6 +216,8 @@ a{
     font-weight: 100;
 }
 
+
+/*Estilos y posicionaminetos para la seccion calender y se implemenatas columnas con css grid*/
 .calender{
     padding-left: 200px;
     padding-right: 200px;
@@ -211,6 +235,8 @@ a{
     margin-top: 100px;
 }
 
+
+/*Estilos y posicionaminetos para la seccion customer y se implemenatas columnas con css grid*/
 .customer{
     padding-top: 100px;
     background-color: #f5f5f5;
@@ -218,7 +244,7 @@ a{
     padding-left: 200px;
     padding-right: 200px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); /*Se asignan dos columnas a la aseccion para un mejor posicionamiento*/
 }
 
 .customer .img-tesla{
@@ -248,9 +274,10 @@ a{
 .customer-logos{
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7,1fr); /*Se implementa un grid para desplazar los logos sobre la segunda columna*/
 }
 
+/*Se implementa estilos a la seccion update y sus posicionamineto utilizando position absolute para sobreponer el boton infromativo sobre las imagenes*/
 .update{
     padding-top: 100px;
     padding-right: 200px;
@@ -276,6 +303,8 @@ a{
     transition: 1.5s;
 }
 
+
+/*Se implementan estilos a la seccion dot anterior al footer se aplican estilos al boton de demo y se hace un itulo grande que llama a la accion*/
 .dot{
     padding-top: 100px;
     font-family: sans-serif;
@@ -291,6 +320,7 @@ a{
 }
 
 .dot button{
+    cursor: pointer;
     color: #ffff;
     font-size: 20px;
     font-weight: bold;
@@ -298,8 +328,24 @@ a{
     border: 0;
     padding: 20px 80px;
     border-radius: 7px;
+    transition: 0.5s;
 }
 
+.dot button:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4caf4f;
+    border: 0;
+    padding: 20px 80px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px #9dcf9e;
+    font-size: 24px;
+}
+
+/*Se implementa estilos a la seccion del footer*/
 footer{
     height: auto;
     background-color: #263238;
@@ -309,6 +355,7 @@ footer .title{
     color: white;
 }
 
+/*Se crean 3 columnas con grid para desplzar los 3 divs que contiene la informacion del footer*/
 .main-footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -332,6 +379,7 @@ footer .title{
     font-size: 20px;
 }
 
+/*Se modifican los iconoes de las redes para una mejor vision*/
 .redes i{
     cursor: pointer;
     margin-left: 100px;
@@ -391,9 +439,67 @@ footer .title{
     padding-left: 20px;
 }
 
-@media (max-width < 480px){
-    .nav{
-        display: flex;
-        flex-direction: column;
-    }
+
+/*En este apartado se corrige las posiciones para una mejor visualizacion en dispositvos moviles*/
+@media (max-width: 768px) { 
+    /*Resetear contenedores con márgenes excesivos */ 
+    .hero, .clients, .community, .unlock, .achievements, .calender, .customer, .update, .dot, .copy, .links, .email {
+        padding-left: 20px !important; padding-right: 20px !important; padding-top: 50px; padding-bottom: 50px; }
+    /*Convertir Grids y Flexbox a una sola columna */
+header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav, .login, .main, .clients-logos, .images-comunity, 
+.unlock, .counts, .calender, .customer, .main-footer, .links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+    align-items: center;
+    text-align: center;
+}
+/* Ajustar textos grandes */
+.text h2, .dot h1 {
+    font-size: 35px;
+}
+
+.secondary h2 {
+    margin-top: 0;
+}
+
+/*Ajustar imágenes para que no se desborden */
+.images-main, .unlock img, .calender img, .customer .img-tesla {
+    margin-left: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+/*Navegación y Botones */
+.nav a {
+    padding: 10px;
+    display: block;
+}
+
+.butons-comunity {
+    position: static;
+    padding-left: 0;
+}
+
+/*Footer */
+.redes {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.redes i {
+    margin: 20px 10px;
+}
+
+.input {
+    width: 100%;
+    max-width: 300px;
+}
 }
